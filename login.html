@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-800 flex items-center justify-center p-30"
+    style="font-family: Silkscreen, sans-serif"
+  >
+    <div
+      class="maindiv border-white border h-120 w-80 p-10 mt-20 rounded-2xl shadow-2xl shadow-white bg-black text-center sm:w-140 md:w-150 "
+    >
+      <h1
+        class="text-2xl text-white font-bold animate-wiggle sm:text-md"
+        style="font-family: Silkscreen, sans-serif"
+      >
+        Welcome to the SYSTEM
+      </h1>
+      <p
+        class="text-white animate-wiggle mt-2"
+        style="
+          animation-delay: 1000ms;
+          animation-fill-mode: forwards;
+          opacity: 0;
+        "
+      >
+        Identify yourself before proceeding
+      </p>
+
+      <input
+        type="text"
+        id="username"
+        placeholder="Username"
+        class="border-white border rounded-2xl w-60 h-10 text-white text-center mb-10 mt-10"
+      />
+      <input
+        type="text"
+        id="password"
+        placeholder="Password"
+        class="border-white border rounded-2xl w-60 h-10 text-white text-center  mt-5"
+      />
+
+      <div class="wrap2">
+        <button onclick="getValue()" class="login w-60 h-10 rounded-2xl bg-white mt-10 active:scale-110 hover:scale-115 transition cursor-pointer" id="loginbtn">
+          Log in
+        </button>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
